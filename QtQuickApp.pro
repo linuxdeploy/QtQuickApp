@@ -3,9 +3,9 @@ TEMPLATE = app
 QT += qml quick
 CONFIG += c++11 release
 
-SOURCES += main.cpp
+SOURCES += src/main.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += src/qml.qrc
 
 QML_IMPORT_PATH =
 
@@ -22,9 +22,9 @@ unix {
 
     target.path = $$PREFIX/bin
 
-    shortcutfiles.files = qtquickapp.desktop
+    shortcutfiles.files = resources/qtquickapp.desktop
     shortcutfiles.path = $$PREFIX/share/applications/
-    data.files += qtquickapp.png
+    data.files += resources/qtquickapp.png
     data.path = $$PREFIX/share/pixmaps/
 
     INSTALLS += shortcutfiles
@@ -34,5 +34,5 @@ unix {
 INSTALLS += target
 
 DISTFILES += \
-    qtquickapp.desktop \
-    qtquickapp.png
+    resources/qtquickapp.desktop \
+    resources/qtquickapp.png
