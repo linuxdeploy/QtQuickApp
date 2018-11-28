@@ -30,3 +30,9 @@
 
 # IDE files
 .idea/
+
+# AppImages
+*.AppImage
+
+# build results
+*build*/
