@@ -1,3 +1,7 @@
+# force C++11
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # import Qt libraries
 find_package(Qt5 REQUIRED COMPONENTS Quick Gui Qml)
 
