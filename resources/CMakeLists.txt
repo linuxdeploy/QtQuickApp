@@ -5,5 +5,5 @@ install(
 
 install(
     FILES qtquickapp.png
-    DESTINATION share/icons/hicolor/128x128/apps
+    DESTINATION share/pixmaps/
 )
